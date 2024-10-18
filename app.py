@@ -94,7 +94,7 @@ else:
             model = DecisionTreeRegressor()
         elif model_option == 'Random Forest Regressor':
             random_grid = {
-                'n_estimators': [10, 20, 30, 50, 100, 200],
+                'n_estimators': [10, 20, 30, 50, 100],
                 'max_depth': [6, 7, 8, 9, 10],
                 'min_samples_split': [5, 10, 20]
             }
