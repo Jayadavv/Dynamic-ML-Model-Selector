@@ -115,7 +115,7 @@ else:
         if model_option == 'Logistic Regression':
             model = LogisticRegression()
         elif model_option == 'Decision Tree Classifier':
-            model = DecisionTreeClassifier()
+            model = DecisionTreeClassifier(criterion='entropy')
         elif model_option == 'Random Forest Classifier':
             random_grid = {
                 'n_estimators': [10, 20, 30, 50, 100, 200],
